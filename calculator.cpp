@@ -16,6 +16,7 @@ int main()
     cout<<"\n";
 
     int input;
+    cout<<"Value : ";
     cin>>input;
     cout<<"\n";
     //Addition
