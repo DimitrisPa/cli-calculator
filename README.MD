@@ -5,11 +5,13 @@ Simple cli calculator wriiten in C++
 ``` {.bash}
 git clone https://github.com/DimitrisPa/cli-calculator
 ```
-
-``` {.bash}
 Compile
+``` {.bash}
 g++ calculator.cpp -o cli-calculator
+
+```
 Run
+``` {.bash}
 ./cli-calculator
 ```
 
