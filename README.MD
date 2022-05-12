@@ -8,7 +8,6 @@ git clone https://github.com/DimitrisPa/cli-calculator
 Compile
 ``` {.bash}
 g++ calculator.cpp -o cli-calculator
-
 ```
 Run
 ``` {.bash}
