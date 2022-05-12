@@ -18,7 +18,7 @@ int main()
     int input;
     cin>>input;
     cout<<"\n";
-    //Prosthesh
+    //Addition
     if (input == 1)
     {
         double x1,x2;
@@ -34,7 +34,7 @@ int main()
         cout<<"Result is : "<< x1 <<" + "<< x2 <<" = "<<output<<endl;
         }
     }
-    //Afairesh
+    //Subtraction
     else if (input == 2)
     {
         double x1,x2;
@@ -50,7 +50,7 @@ int main()
         cout<<"Result is : "<< x1 <<" - "<< x2 <<" = "<<output<<endl;
         }
     }
-    //Pollaplasiamos
+    //Multiplication
     else if (input == 3)
     {
         double x1,x2;
@@ -66,7 +66,7 @@ int main()
         cout<<"Result is : "<< x1 <<" * "<< x2 <<" = "<<output<<endl;
         }
     }
-    //Diairesh
+    //Division
     else if (input == 4)
     {
         double x1,x2;
@@ -87,12 +87,13 @@ int main()
         cout<<"Result is : "<< x1 <<" / "<< x2 <<" = "<<output<<endl;
         }
     }
-    //H epilogh den yparxei
+    //Close app
     else if (input == 5)
     {
         cout<<"Close app";
         exit;
     }
+    //Wrong input
     else
     {
         cout<<"Wrong number";
