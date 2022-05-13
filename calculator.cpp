@@ -1,24 +1,18 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
     //Select screen
-    cout<<"Welcome to the CLI Calculator\n";
-    cout<<"\n";
-    cout<<"Select value (Numbers ONLY) : \n";
-    cout<<"1) +"<<endl;
-    cout<<"2) -"<<endl;
-    cout<<"3) *"<<endl;
-    cout<<"4) /"<<endl;
-    cout<<"5) Exit"<<endl;
-    cout<<"\n";
+    cout<<"Welcome to the CLI Calculator\n"<<"\n";
+    cout<<"Select value (Numbers ONLY)\n1) +\n2) -\n3) *\n4) /\n5) Exit\n"<<"\n";
 
+    //User input
     int input;
     cout<<"Value : ";
     cin>>input;
     cout<<"\n";
+
     //Addition
     if (input == 1)
     {
@@ -30,7 +24,7 @@ int main()
         {
             cout<<"Insert only numbers!\n";
         }
-        else{
+        else{    cout<<"\n";
         double output = x1 + x2;
         cout<<"Result is : "<< x1 <<" + "<< x2 <<" = "<<output<<endl;
         }
