@@ -24,7 +24,9 @@ int main()
         {
             cout<<"Insert only numbers!\n";
         }
-        else{    cout<<"\n";
+        else
+        {   
+        cout<<"\n";
         double output = x1 + x2;
         cout<<"Result is : "<< x1 <<" + "<< x2 <<" = "<<output<<endl;
         }
@@ -40,7 +42,8 @@ int main()
         {
             cout<<"Insert only numbers!\n";
         }
-        else{
+        else
+        {
         double output = x1 - x2;
         cout<<"Result is : "<< x1 <<" - "<< x2 <<" = "<<output<<endl;
         }
@@ -56,7 +59,8 @@ int main()
         {
             cout<<"Insert only numbers!\n";
         }
-        else{
+        else
+        {
         double output = x1 * x2;
         cout<<"Result is : "<< x1 <<" * "<< x2 <<" = "<<output<<endl;
         }
