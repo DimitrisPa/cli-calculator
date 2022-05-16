@@ -3,13 +3,14 @@ using namespace std;
 
 int main()
 {
-    string choice;
-    do{
     //Welcome Screen
-    cout<<"Welcome to the CLI Calculator\n"<<"\n";
-    cout<<"Select value \n1) +\n2) -\n3) *\n4) /\n5) x (Exit)\n"<<"\n";
+    cout<<"Welcome to the CLI Calculator\n\n";
+    string choice;
+
+    do{
 
     //User choice
+    cout<<"Select value \n1) +\n2) -\n3) *\n4) /\n5) x (Exit)\n\n";
     char input;
     cout<<"Value : ";
     cin>>input;
@@ -53,8 +54,9 @@ int main()
     }
     }
     //Give user the choice to restart the app
-    cout<<"Would you like to use the calculator again? [Yes/No]\n";
+    cout<<"Would you like to use the calculator again? [Yes/No] : ";
     cin>>choice;
+    cout<<"\n";
 
     }
     while(choice == "Yes" || choice == "yes" || choice == "y");
