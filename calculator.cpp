@@ -3,100 +3,61 @@ using namespace std;
 
 int main()
 {
-    //Select screen
+    string choice;
+    do{
+    //Welcome Screen
     cout<<"Welcome to the CLI Calculator\n"<<"\n";
-    cout<<"Select value (Numbers ONLY)\n1) +\n2) -\n3) *\n4) /\n5) Exit\n"<<"\n";
+    cout<<"Select value \n1) +\n2) -\n3) *\n4) /\n5) x (Exit)\n"<<"\n";
 
-    //User input
-    int input;
+    //User choice
+    char input;
     cout<<"Value : ";
     cin>>input;
     cout<<"\n";
 
-    //Addition
-    if (input == 1)
+    //Terminate the app
+    if (input == 'x')
     {
-        double x1,x2;
-        cout<<"Please insert your two numbers : ";
-        cin >> x1;
-        cin >> x2;
-        if(!cin)
-        {
-            cout<<"Insert only numbers!\n";
-        }
-        else
-        {   
-        cout<<"\n";
-        double output = x1 + x2;
-        cout<<"Result is : "<< x1 <<" + "<< x2 <<" = "<<output<<endl;
-        }
-    }
-    //Subtraction
-    else if (input == 2)
+        exit (EXIT_FAILURE);;
+    }else
     {
-        double x1,x2;
-        cout<<"Please insert your two numbers : ";
-        cin>>x1;
-        cin>>x2;
-        if(!cin)
-        {
-            cout<<"Insert only numbers!\n";
-        }
-        else
-        {
-        double output = x1 - x2;
-        cout<<"Result is : "<< x1 <<" - "<< x2 <<" = "<<output<<endl;
-        }
-    }
-    //Multiplication
-    else if (input == 3)
+    //User numbers
+    double x1,x2;
+    cout<<"Please insert two numbers : ";
+    cin >> x1 >> x2;
+    cout<<"\n";
+
+    switch(input)
     {
-        double x1,x2;
-        cout<<"Please insert your two numbers : ";
-        cin>>x1;
-        cin>>x2;
-        if(!cin)
-        {
-            cout<<"Insert only numbers!\n";
-        }
-        else
-        {
-        double output = x1 * x2;
-        cout<<"Result is : "<< x1 <<" * "<< x2 <<" = "<<output<<endl;
-        }
+        //Addition
+        case '+' :
+            cout<<"Result is : "<< x1 <<" + "<< x2 <<" = "<< x1 + x2<<"\n\n";
+        break;
+        //Subtraction
+        case '-' :
+            cout<<"Result is : "<< x1 <<" - "<< x2 <<" = "<< x1 - x2<<"\n\n";
+        break;
+        //Multiplication
+        case '*' :
+            cout<<"Result is : "<< x1 <<" * "<< x2 <<" = "<< x1 * x2<<"\n\n";
+        break;
+        //Division
+        case '/' :
+            cout<<"Result is : "<< x1 <<" / "<< x2 <<" = "<< x1 / x2<<"\n\n";
+        break;
+        //Wrong input
+        default :
+            cout<<"Wrong value\n"<<"\n";
+        break;
+
     }
-    //Division
-    else if (input == 4)
-    {
-        double x1,x2;
-        cout<<"Please insert your two numbers : ";
-        cin>>x1;
-        cin>>x2;
-        if(!cin)
-        {
-            cout<<"Insert only numbers!\n";
-        }
-        else if (x1 == 0 || x2 == 0)
-        {
-            cout<<"Division by 0\n";
-        }
-        else
-        {
-        double output = x1 / x2;
-        cout<<"Result is : "<< x1 <<" / "<< x2 <<" = "<<output<<endl;
-        }
     }
-    //Close app
-    else if (input == 5)
-    {
-        cout<<"Close app";
-        exit;
+    //Give user the choice to restart the app
+    cout<<"Would you like to use the calculator again? [Yes/No]\n";
+    cin>>choice;
+
     }
-    //Wrong input
-    else
-    {
-        cout<<"Wrong number";
-    }
+    while(choice == "Yes" || choice == "yes" || choice == "y");
 
     return 0;
 }
