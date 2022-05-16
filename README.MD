@@ -20,10 +20,7 @@ Run
 
 ## Screenshots
 
-![Screenshot1](assets/Addition.png)
-![Screenshot2](assets/Subtraction.png)
-![Screenshot3](assets/Multiplication.png)
-![Screenshots4](assets/Division.png)
+![Preview](assets/preview.png)
 
 ## License
 
