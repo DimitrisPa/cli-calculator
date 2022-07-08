@@ -1,4 +1,4 @@
-# CLI Calculator 🖩
+# CLI Calculator
 
 Simple cli calculator wriiten in C++
 
@@ -18,10 +18,10 @@ Run
 ./cli-calculator
 ```
 
-## Screenshot 📷
+## Screenshots
 
 ![Preview](assets/preview.png)
 
-## License 📜
+## License
 
 - Licensed under [GPLv3](LICENSE)
