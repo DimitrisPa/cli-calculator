@@ -32,34 +32,27 @@ int main()
     {
         //Addition
         case '+' :
-            cout<<"Result is : "<< x1 <<" + "<< x2 <<" = "<< x1 + x2 <<"\n\n";
+            cout<<"Result is : "<< x1 <<" + "<< x2 <<" = "<< x1 + x2<<"\n\n";
         break;
         //Subtraction
         case '-' :
-            cout<<"Result is : "<< x1 <<" - "<< x2 <<" = "<< x1 - x2 <<"\n\n";
+            cout<<"Result is : "<< x1 <<" - "<< x2 <<" = "<< x1 - x2<<"\n\n";
         break;
         //Multiplication
         case '*' :
-            cout<<"Result is : "<< x1 <<" * "<< x2 <<" = "<< x1 * x2 <<"\n\n";
+            cout<<"Result is : "<< x1 <<" * "<< x2 <<" = "<< x1 * x2<<"\n\n";
         break;
         //Division
         case '/' :
-            if (x1 == 0 || x2 == 0)
-            {
-                cout<<"Division by 0\n\n";
-            }
-            else
-            {
-            cout<<"Result is : "<< x1 <<" / "<< x2 <<" = "<< x1 / x2 <<"\n\n";
-            }
+            cout<<"Result is : "<< x1 <<" / "<< x2 <<" = "<< x1 / x2<<"\n\n";
         break;
         //Wrong input
         default :
             cout<<"Wrong value\n"<<"\n";
         break;
-    }
-    }
 
+    }
+    }
     //Give user the choice to restart the app
     cout<<"Would you like to use the calculator again? [Yes/No] : ";
     cin>>choice;
