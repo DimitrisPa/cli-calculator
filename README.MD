@@ -1,6 +1,6 @@
 # CLI Calculator
 
-Simple cli calculator wriiten in C++
+Simple cli calculator written in C++
 
 ```{.bash}
 git clone https://github.com/DimitrisPa/cli-calculator
